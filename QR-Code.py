@@ -1,6 +1,8 @@
-# Para este algoritmo es necesario instalar mediante consola el módulo qrcode y pillo con los siguientes comandos
+# To ru correctly this algorithm it is necesary to instal the qrcode and pillow modules
+# That can be done using the next commands:
 # pip install qrcode
 # pip install pillow
+
 # Para ver la dcoumentación de la librería qrcode: https://pypi.org/project/qrcode/
 # Para ver la documentación de la librería pillow: https://pillow.readthedocs.io/en/stable/
 
