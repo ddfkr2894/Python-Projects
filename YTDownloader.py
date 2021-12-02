@@ -1,5 +1,5 @@
 # This algorithm downloads a certain video from YouTube,
-# After it convert the video to mp3 format
+# After it converts the video file to a mp3 format
 
 # It is necesary to install the pytube and moviepy modules
 # That can be done using the pip install pytube and moviepy commands
