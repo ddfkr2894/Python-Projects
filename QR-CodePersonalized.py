@@ -2,7 +2,7 @@ import qrcode
 from PIL import Image
 
 # Indicamos el nombre y ruta de la imagen que tendrá en el centro el código
-imagenlogo = r'./pandemicDays.jpg'
+imagenlogo = r'./img/pandemicDays.jpg'
 logo = Image.open(imagenlogo)
 
 # Ajustamos el tamaño de la imagen
