@@ -4,6 +4,9 @@
 # It is necesary to install the pytube and moviepy modules
 # That can be done using the pip install pytube and moviepy commands
 
+# moviepy documentation: https://zulko.github.io/moviepy/
+# pytube documentation: https://pytube.io/en/latest/
+
 import pytube
 import moviepy.editor as mp
 from pytube import YouTube
