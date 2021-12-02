@@ -2,6 +2,7 @@
 # pip install qrcode
 # pip install pillow
 # Para ver la dcoumentación de la librería qrcode: https://pypi.org/project/qrcode/
+# Para ver la documentación de la librería pillow: https://pillow.readthedocs.io/en/stable/
 
 import qrcode
 from PIL import Image
