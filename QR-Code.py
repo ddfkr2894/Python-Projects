@@ -1,3 +1,8 @@
+# Para este algoritmo es necesario instalar mediante consola el módulo qrcode y pillo con los siguientes comandos
+# pip install qrcode
+# pip install pillow
+# Para ver la dcoumentación de la librería qrcode: https://pypi.org/project/qrcode/
+
 import qrcode
 from PIL import Image
 
