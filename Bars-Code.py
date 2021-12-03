@@ -1,6 +1,7 @@
 # This algorithm generates a bar code
 # It is necesary to preinstall the python-barcode module
 # That can be done using the command pip install python-barcode
+# Here is the python-barcode documentation: https://python-barcode.readthedocs.io/en/stable/
 
 from barcode import EAN13
 from barcode.writer import ImageWriter
