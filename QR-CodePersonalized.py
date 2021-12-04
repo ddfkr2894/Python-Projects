@@ -1,3 +1,9 @@
+# This algorithm takes the provided picture and change its size after that
+# the qr-code its created by  the add_data() method, also somo attributes will
+# be assigned to the qr-code such as the URL. Finally the qr-code will be generated
+# y it is going to be saved in the specified folder using the save() method
+
+
 import qrcode
 from PIL import Image
 
