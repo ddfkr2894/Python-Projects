@@ -22,6 +22,7 @@
 #
 #clip.audio.write_audiofile("3 Doors Down - Landing in London.mp3")
 
+from contextlib import redirect_stderr
 import tkinter
 from tkinter import *
 import pytube
@@ -32,13 +33,19 @@ def getmp3():
     url = urlTextBox.get()
     path = "./GeneratedFiles"
 
-    yt = pytube.YouTube(url)
-    yt.streams.first().download(path)
+    try:
+        yt = pytube.YouTube(url)
+        yt.streams.first().download(path)
 
-    name = ("./GeneratedFiles/" + yt.title + ".3gpp")
-    clip = mp.VideoFileClip(name)
+        name = ("./GeneratedFiles/" + yt.title + ".3gpp")
+        clip = mp.VideoFileClip(name)
 
-    clip.audio.write_audiofile(yt.title + ".mp3")
+        clip.audio.write_audiofile(yt.title + ".mp3")
+        outputMessage['text'] = "The mp3\n{}\nwas downloaded successfully :D".format(yt.title)
+    except:
+        outputMessage['text'] = "Something went wrong trying to download\n{}\n:(".format(yt.title)
+    finally:
+        urlTextBox.delete(0, END)
 
 WindowApp = Tk()
 WindowApp.title("mp3 YouTube Downloader")
@@ -55,5 +62,8 @@ urlTextBox.pack()
 
 getMp3Button = Button(WindowApp, text = "Get mp3!", command = getmp3)
 getMp3Button.pack()
+
+outputMessage = Label(text = "", fg = "red")
+outputMessage.pack()
 
 WindowApp.mainloop()
